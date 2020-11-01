@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<div align="center">s
+		<h1>Create New Entry</h1>
+		<br> <br>
+		<form  th:action="@{/save}" th:object="${emp}" method="post">
+		<table>
+			<tr>
+				<td>First Name</td>
+				<td><input type="text" th:field="*{firstName}" /></td>
+			</tr>
+			<tr>
+				<td>Last Name</td>
+				<td><input type="text" th:field="*{lastName}" /></td>
+			</tr>
+			<tr>
+				<td>Skill</td>
+				<td><input type="text" th:field="*{skill}" /></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit" value="Add"></td>
+			</tr>
+		</table>
+		</form>
+	</div>
+
+</body>
+</html>
