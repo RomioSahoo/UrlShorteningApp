@@ -10,4 +10,4 @@ This link should be short enough to be easily copy and pasted into applications
 
 * Generated link will have a standard expiration time. Users can also define the url expiration time
 
-* Hashing algorithm used: murmur32 
+* Hashing algorithm used to generate unique hash: murmur32 
